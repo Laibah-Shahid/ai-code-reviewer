@@ -87,9 +87,3 @@ code-reviewer/
 Feel free to fork this repo and submit a pull request for improvements or new features.
 
 ---
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
