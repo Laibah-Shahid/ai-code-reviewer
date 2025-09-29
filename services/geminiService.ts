@@ -1,6 +1,8 @@
 import { GoogleGenAI } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({
+  apiKey: import.meta.env.VITE_GEMINI_API_KEY,
+});
 
 const SYSTEM_INSTRUCTION = `
 You are an expert senior software engineer and automated code review assistant.
@@ -41,7 +43,7 @@ No other formatting is allowed.
 `;
 
 export const reviewCode = async (code: string, language: string): Promise<string> => {
-  if (!process.env.API_KEY) {
+  if (!import.meta.env.VITE_GEMINI_API_KEY) {
     return "API Error: API key is not configured. Please set up your environment variables.";
   }
   
