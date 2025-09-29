@@ -69,7 +69,7 @@ This tool helps developers automatically analyze, review, and improve their code
 ## 📂 Project Structure
 
 ```
-code-reviewer/
+ai-code-reviewer/
 │── components/      # UI components
 │── services/         # geminiService.ts
 │── utils/             # API + utility functions
